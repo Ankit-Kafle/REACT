@@ -1,5 +1,5 @@
 import './Home.css'
-import {Button} from '../Shared/Navbar.css'
+import {Button} from '../Shared/Navbar.css.jsx'
 
 const Home = () =>{
 

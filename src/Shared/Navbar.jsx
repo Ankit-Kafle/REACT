@@ -1,4 +1,3 @@
-import { Button } from './Navbar.css'
 import { Link } from 'react-router-dom';
 
 const Navbar = () =>{
@@ -14,7 +13,6 @@ const Navbar = () =>{
         <li><Link to="/optimization">Optimization</Link></li>
         <li><Link to="/useeffect">UseEffect</Link></li>
         <li><Link to="/usecontext">UseContext</Link></li>
-        <Button bgColor="yellow" color="black"> Click Me </Button>
       </ul> 
     </nav>
       
