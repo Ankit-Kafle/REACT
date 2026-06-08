@@ -9,9 +9,9 @@ const AxiosPractice = () => {
 
     // use Effect
 
-    // useEffect(() =>{
-    //     console.log("Component Mounted")
-    // })
+    useEffect(() =>{
+        console.error("Component Mounted")
+    })
 
     async function fetchData() {
         try {
@@ -31,6 +31,8 @@ const AxiosPractice = () => {
 
     return (
         <>
+
+        
             <button className="bg-green-600 text-white" onClick={fetchData}>Fetch Data</button>
             <button className="bg-yellow-800 text-white" onClick={axiosData}>Axios Data</button>
 
@@ -54,5 +56,3 @@ const AxiosPractice = () => {
 }
 
 export default AxiosPractice;
-
-

@@ -10,6 +10,10 @@ const Navbar = () =>{
         <li><Link to={"/"}>Home</Link></li>
         <li><Link to="/axios">Axios</Link></li>
         <li><Link to="/about">About</Link></li>
+        <li><Link to="/post">Post</Link></li>
+        <li><Link to="/optimization">Optimization</Link></li>
+        <li><Link to="/useeffect">UseEffect</Link></li>
+        <li><Link to="/usecontext">UseContext</Link></li>
         <Button bgColor="yellow" color="black"> Click Me </Button>
       </ul> 
     </nav>
