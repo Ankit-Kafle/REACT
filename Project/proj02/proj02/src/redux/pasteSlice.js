@@ -9,16 +9,16 @@ export const pasteSlice = createSlice({
   name: 'pastes',
   initialState,
   reducers: {
-    addToPastes: (state,action) => {
+    addToPastes: () => {
      
     },
-    updateToPastes: (state,action) => {
+    updateToPastes: () => {
      
     },
-    resetAllPastes: (state,action) => {
+    resetAllPastes: () => {
      
     },
-    removeFromPastes: (state,action) => {
+    removeFromPastes: () => {
      
     },
    
