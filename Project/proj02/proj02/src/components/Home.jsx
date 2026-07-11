@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { data, useSearchParams } from "react-router-dom";
+import { addToPastes, updateToPastes } from "../redux/pasteSlice";
 
 const Home = () => {
   const [title, setTitle] = useState("");
@@ -8,10 +10,42 @@ const Home = () => {
   const [searchParams] = useSearchParams();
 
   const pasteId = searchParams.get("pasteId");
+const dispatch = useDispatch();
+
+
+function createPaste(){
+
+  const paste = {
+    title: title, // title value is stored in a state variable
+    content: value,
+    _id: pasteId ||
+    Date.now().toString(36),
+    createdAt: new Date().toISOString(),
+  }
+
+if(pasted){
+//update
+dispatch(updateToPastes(paste));
+}
+else{
+//create
+dispatch(addToPastes(paste));
+}
+
+
+//after creation or updation
+setTitle('');
+setValue('');
+setSearchParams({});
+
+
+}
+
+
 
   return (
   <div>
-      <div className="flex flex-row gap-7">
+      <div className="flex flex-row gap-7 ">
       <input
         className="p-3 rounded-medium mt-2"
         type="text"
